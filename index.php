@@ -25,8 +25,7 @@
                     success: funcSuccess      
                 }) ;  
           });
-       
-    
+
         $("#done").bind("click", function () {
             var admin= "Admin";
             $.ajax ({
@@ -55,6 +54,8 @@
     <p>All is working!!!</p>
     <p id="load" style="cursor:pointer">Загрузить данные</p>
     <div id="information"></div>
+    <A HREF="#nul" ONCLICK="window.open('http://www.tut.by ','','Toolbar=1,Location=0,Directories=0,Status=0,Menubar=0,Scrollbars=0,Resizable=0,Width=550,Height=400');">tut.by</A>
+
     </body>
 
 
