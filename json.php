@@ -4,43 +4,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>
         
-            $(document).ready (function () {
-                
+            $(document).ready (function () {        
                  $("select[name='country']").bind("change", function () {
-                     
-                     
-                     
                         $("select[name='city']").empty();
                 $.get("countryCheck.php", {country: $("select[name='country']").val() }, function (data) {
                       data = JSON.parse(data);
                     for(var id in data) {
                             $("select[name='city']").append($("<option value = '" + id + "'>" + data[id] + "</option>"));
                         }
-                     
-                      });  
-                     
-                     
-      
-                     
-                 });
-                
-            
-                
-            });
-               
-                    
-                    
-                    
-                    
-                    
-                    
-            
-                 
-                    
-            
-           
-      
-        
+                     });          
+                 });          
+            });   
     </script>
     </head>
     <body>
