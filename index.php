@@ -6,7 +6,7 @@
 <script>
     
     function funcBefore () {
-        $("#information").text ("Ожидание данных...."); 
+        $("#information").html ("<img src='1.png'>"); 
     }
     
     function funcSuccess (data) {
